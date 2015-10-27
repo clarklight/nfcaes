@@ -11,8 +11,8 @@
 
     <license>MIT</license>
     <keywords>nfc, NFC, NDEF</keywords>
-    <repo>https://github.com/chariotsolutions/phonegap-nfc.git</repo>
-    <issue>https://github.com/chariotsolutions/phonegap-nfc/issues</issue>
+    <repo>https://github.com/clarklight/nfcaes.git</repo>
+    <issue>https://github.com/clarklight/nfcaes/issues</issue>
 
     <!-- temp remove engines tag due to bug CB-5139 in cli 3.1.0-0.2.0 for blackberry 10
     <engines>
@@ -28,7 +28,7 @@
         <!-- requires Cordova-2.8.0 -->
         <config-file target="res/xml/config.xml" parent="/widget">
             <feature name="NfcPlugin">
-                <param name="android-package" value="com.chariotsolutions.nfc.plugin.NfcPlugin"/>
+                <param name="android-package" value="com.clark.nfc.plugin.NfcPlugin"/>
                 <param name="onload" value="true" />
             </feature>
         </config-file>
