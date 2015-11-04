@@ -1,5 +1,6 @@
 # nfcaes
 
+Cordova/Phonegap MIFARE EV1 AES Encryption. 
 
 Development for this AES encryption for MIFARE EV1 on Android Cordova/Phonegap has just Began. 
 
@@ -7,3 +8,8 @@ Development for this AES encryption for MIFARE EV1 on Android Cordova/Phonegap h
 
 This plugin is aim to use MIFARE LITE SDK to build a plugin for Cordova to enable it to Encrypt data with AES 
 on to the cards. 
+
+-Select
+-Read/Write
+-Authenticate 
+-Encrypt/Decrypt
