@@ -10,7 +10,11 @@ This plugin is aim to use MIFARE LITE SDK to build a plugin for Cordova to enabl
 on to the cards. 
 
 -Get Hex ID(Tag ID)
+
 -Select
+
 -Read/Write
+
 -Authenticate 
+
 -Encrypt/Decrypt
