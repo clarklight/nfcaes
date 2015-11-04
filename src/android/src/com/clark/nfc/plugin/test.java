@@ -60,6 +60,11 @@ public class MifarePlugin extends CordovaPlugin {
      private static final String ACTION_PERSONALIZE = "Personalize";  
    private static final String ACTION_UPDATEMASTERKEY = "Updatemasterkey";  
    private static final String ACTION_WRITE_TAG_DATA = "writeTag";  
+        private static final String TAG_EVENT_DETECTED = "onTagDetected";
+    private static final String TAG_EVENT_ERROR = "onTagError";
+    private static final String TAG_EVENT_ERROR_TYPE_SECURITY = "Security";
+    private static final String TAG_EVENT_ERROR_TYPE_IOREAD = "IORead";
+    private static final String TAG_EVENT_ERROR_TYPE_CARD = "Card";
 	private byte[] bytesKey = null;
 	/** */
 	private Cipher cipher = null;
@@ -90,15 +95,13 @@ public class MifarePlugin extends CordovaPlugin {
             
               
               }
-      
+          return true;
             
     }
 
-           return true;
+       
     
    
-    
-}
 
 
   private void init(CallbackContext callbackContext) {
@@ -129,7 +132,8 @@ public class MifarePlugin extends CordovaPlugin {
 
 
 
-
+    
+}
 
 
 
