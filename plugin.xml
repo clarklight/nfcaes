@@ -3,7 +3,7 @@
     xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="com.clark.nfcaes.plugin"
-    version="0.1.2">
+    version="0.1.3">
 
     <name>NFC</name>
 
@@ -29,7 +29,7 @@
         <config-file target="res/xml/config.xml" parent="/widget">
             <feature name="MifarePlugin">
                 <param name="android-package" value="com.clark.nfc.plugin.MifarePlugin"/>
-                <param name="onload" value="true" />
+                
             </feature>
         </config-file>
 
