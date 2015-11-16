@@ -1,4 +1,4 @@
-package com.clark.nfc.plugin;
+package com.clark.nfcaes.plugin;
 
 import com.nxp.nfclib.classic.IMFClassic;
 import com.nxp.nfclib.exceptions.PlusException;
