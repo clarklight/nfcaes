@@ -34,6 +34,7 @@ import com.nxp.nfcliblite.cards.IDESFireEV1;
 import com.nxp.nfcliblite.cards.IPlus;
 
 
+
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.PluginResult;
@@ -65,6 +66,60 @@ public class MifarePlugin extends CordovaPlugin {
     private static final String TAG_EVENT_ERROR_TYPE_SECURITY = "Security";
     private static final String TAG_EVENT_ERROR_TYPE_IOREAD = "IORead";
     private static final String TAG_EVENT_ERROR_TYPE_CARD = "Card";
+	static final String TAG = "SampleNxpNfcLibLite";
+	/** Create lib lite instance. */
+	private NxpNfcLibLite libInstance = null;
+	/** Mifare DESFire instance initiated. */
+	private IDESFireEV1 mDESFire;
+
+	/** Mifare MFClassic instance initiated. */
+	private IMFClassic classic;
+	/** Mifare Ultralight instance initiated. */
+	private IUltralight mifareUL;
+	/** Mifare Ultralight instance initiated. */
+	private IUltralightC objUlCardC;
+	/** Mifare Ultralight EV1 instance initiated. */
+	private IUltralightEV1 objUlCardEV1;
+	/** Mifare Plus instance initiated. */
+	private IPlus plus;
+
+	/** Mifare Plus SL1 instance initiated. */
+	private IPlusSL1 plusSL1;
+
+	/** ICode SLI instance initiated. */
+	private IICodeSLI iCodeSli;
+	/** ICode SLI-L instance initiated. */
+	private IICodeSLIL iCodeSliL;
+	/** ICode SLI-S instance initiated. */
+	private IICodeSLIS iCodeSliS;
+	/** ICode SLI-X instance initiated. */
+	private IICodeSLIX iCodeSliX;
+	/** ICode SLI-XL instance initiated. */
+	private IICodeSLIXL iCodeSliXL;
+	/** ICode SLI-XS instance initiated. */
+	private IICodeSLIXS iCodeSliXS;
+	/** ICode SLIX2 instance initiated. */
+	private IICodeSLIX2 iCodeSliX2;
+
+	/** Create imageView instance. */
+	private ImageView mImageView = null;
+	// private static Handler mHandler;
+	/** Create Textview instance initiated. */
+	private TextView tv = null;
+	/**
+	 * Ultralight First User Memory Page Number.
+	 */
+	private static final int DEFAULT_PAGENO_ULTRALIGHT = 4;
+	/**
+	 * Variable DATA Contain a String.
+	 */
+	private static final String DATA = "This is the data";
+
+	/**
+	 * KEY_APP_MASTER key used for encrypt data.
+	 */
+	private static final String KEY_APP_MASTER = "This is my key  ";
+	/** */
 	private byte[] bytesKey = null;
 	/** */
 	private Cipher cipher = null;
@@ -98,10 +153,6 @@ public class MifarePlugin extends CordovaPlugin {
           return true;
             
     }
-
-       
-    
-   
 
 
   private void init(CallbackContext callbackContext) {
