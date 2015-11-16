@@ -28,13 +28,13 @@
         <!-- requires Cordova-2.8.0 -->
         <config-file target="res/xml/config.xml" parent="/widget">
             <feature name="NfcPlugin">
-                <param name="android-package" value="com.clark.nfc.plugin.NfcPlugin"/>
+                <param name="android-package" value="com.clark.nfc.plugin.test"/>
                 <param name="onload" value="true" />
             </feature>
         </config-file>
 
-        <source-file src="src/android/src/com/clark/nfc/plugin/test.java"
-            target-dir="src/android/src/com/clark/nfc/plugin"/>
+        <source-file src="src/android/src/com/clark/nfcaes/plugin/test.java"
+            target-dir="src/android/src/com/clark/nfcaes/plugin"/>
         
 
         <!-- kludge for 2.9 support -->
