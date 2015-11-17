@@ -1,8 +1,3 @@
-function init (options, successCallback, failureCallback){
-
-cordova.exec(successCallback, failureCallback, 'MifarePlugin', 'init',[options]);
-}
-
 
 
 var nfc = {
