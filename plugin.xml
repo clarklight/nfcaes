@@ -33,7 +33,7 @@
             </feature>
         </config-file>
 
-        <source-file src="src/android/src/com/clark/nfcaes/plugin/test.java"
+        <source-file src="src/android/src/com/clark/nfcaes/plugin/MifarePlugin.java"
             target-dir="src/android/src/com/clark/nfcaes/plugin"/>
         
 
