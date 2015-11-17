@@ -24,7 +24,7 @@
         </js-module>
 
         <!-- requires Cordova-2.8.0 -->
-        <config-file target="res/xml/config.xml" parent="/widget">
+        <config-file target="config.xml" parent="/widget">
          <feature name="MifarePlugin">
                 <param name="android-package" value="com.clark.nfcaes.plugin.MifarePlugin"/>
                 <param name="onload" value="true" />
