@@ -20,32 +20,7 @@
     </engines>
     -->
 
-    <platform name="android">
-        <js-module src="www/phonegap-nfc.js" name="NFC">
-            <runs />
-        </js-module>
-
-        <!-- requires Cordova-2.8.0 -->
-        <config-file target="res/xml/config.xml" parent="/widget">
-         <feature name="MifarePlugin">
-                <param name="android-package" value="com.clark.nfcaes.plugin.MifarePlugin"/>
-                <param name="onload" value="true" />
-            </feature>
-        </config-file>
-
-        <source-file src="src/android/src/com/clark/nfcaes/plugin/MifarePlugin.java"
-            target-dir="src/android/src/com/clark/nfcaes/plugin"/>
-        
-
-        <!-- kludge for 2.9 support -->
-      
-
-        <config-file target="AndroidManifest.xml" parent="/manifest">
-            <uses-permission android:name="android.permission.NFC"/>
-            <uses-feature android:name="android.hardware.nfc" android:required="false"/>
-        </config-file>
-
-    </platform>
+   
 
    
 
