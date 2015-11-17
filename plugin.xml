@@ -27,10 +27,7 @@
 
         <!-- requires Cordova-2.8.0 -->
         <config-file target="res/xml/config.xml" parent="/widget">
-            <feature name="MifarePlugin">
-                <param name="android-package" value="com.clark.nfc.plugin.MifarePlugin"/>
-                
-            </feature>
+         
         </config-file>
 
         <source-file src="src/android/src/com/clark/nfcaes/plugin/test.java"
