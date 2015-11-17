@@ -38,10 +38,7 @@
         <!-- kludge for 2.9 support -->
       
 
-        <config-file target="AndroidManifest.xml" parent="/manifest">
-            <uses-permission android:name="android.permission.NFC"/>
-            <uses-feature android:name="android.hardware.nfc" android:required="false"/>
-        </config-file>
+       
 
     </platform>
 
