@@ -1,10 +1,2 @@
-bin/
-proguard.cfg
-target/
-dist/
-Makefile
+*.class
 .DS_Store
-.idea
-*.iml
-.project
-out/
